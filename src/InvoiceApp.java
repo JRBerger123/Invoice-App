@@ -177,7 +177,11 @@ public class InvoiceApp {
         } // end of for lop
 
         System.out.println(InvoiceApp.SINGLE_DASH_LINE);
-        System.out.printf("Total Savings: $%,8.2f\n", totalSavings);
+
+        if (totalSavings > 0.0) {
+            System.out.printf("Total Savings: $%,8.2f\n", totalSavings);
+        }
+
         System.out.printf("Receipt Total: $%,8.2f\n", receiptTotal);
         System.out.println(InvoiceApp.SINGLE_DASH_LINE);
 
