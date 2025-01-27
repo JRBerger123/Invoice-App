@@ -4,6 +4,10 @@ This app is meant as practice for creating java projects using GitHub through a 
 
 <br>
 
+## App Preview
+
+![Screenshot of the application's output](Other/Preview.png)
+
 ## Helpful Resources
 
 How to use README Markdown:<br>
