@@ -7,7 +7,7 @@ This app is meant as practice for creating java projects using GitHub through a 
 ## App Preview
 
 ![Screenshot of the application's output](Other/Preview.png)<br>
-(Other/InvoiceApp.txt)<br>
+[InvoiceApp.txt](Other/InvoiceApp.txt)<br>
 
 ## Helpful Resources
 
