@@ -1,13 +1,12 @@
 ## Invoice App
 
-This app is meant as practice for creating java projects using GitHub through a collaborative group
+This app is meant as practice for creating java projects using GitHub through a collaborative group.
 
 ## Helpful Resources
 
 How to use README Markdown:<br>
 - https://github.com/adam-p/markdown-here/wiki/markdown-cheatsheet<br>
-- https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-<br>
-on-github/basic-writing-and-formatting-syntax
+- https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax<br>
 
 Helpful resources for README Template Examples:
 - https://github.com/othneildrew/Best-README-Template<br>
