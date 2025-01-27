@@ -6,8 +6,10 @@ import java.util.Scanner;
  * Represents an Invoice Calculator.
  *
  * @author Brandon Berger
+ * @author Conner Diers
  * @version 2.0
  * @link https://github.com/JRBerger123/Invoice-App
+ * @link https://github.com/ConnerDiers3117/Invoice-App
  */
 public class InvoiceApp {
     /**
@@ -190,7 +192,22 @@ public class InvoiceApp {
      * @return The subtotal after applying the discount
      */
      private static double getDiscount(double subTotal){
-        return 0.33;
+        /*return 0.33;*/
+
+         if (subTotal >= 50.0){
+             return .25;
+         } else if (subTotal >= 40.0){
+             return .20;
+         }else if (subTotal >= 30.0){
+             return .15;
+         } else if (subTotal >= 20.0){
+             return .10;
+         }else if (subTotal >= 10.0){
+             return .5;
+         }else {
+             return .0;
+         }
+
      }
 
     /**
