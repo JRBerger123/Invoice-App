@@ -142,6 +142,9 @@ public class InvoiceApp {
 
         double subTotal = 0.0;
         double receiptTotal = 0.0;
+        double discountPercent = 0.0;
+        double discount = 0.0;
+        double totalSavings = 0.0;
 
         System.out.println(InvoiceApp.DOUBLE_DASH_LINE);
         System.out.println("Customer Receipt");
@@ -158,15 +161,37 @@ public class InvoiceApp {
             System.out.println();
             System.out.printf("%-20s  %3d  @  $%,6.2f = $%,8.2f\n", description, qty, price, subTotal);
 
+            discountPercent = getDiscount(subTotal);
+
+            if (discountPercent != 0.0) {
+                //System.out.printf("Discount: %,.2f\n", discountPercent);
+                discount = subTotal * discountPercent;
+                subTotal -= discount;
+                totalSavings += discount;
+            
+                System.out.printf("%20s %3.0f%%    -$%,6.2f = $%,8.2f\n", "Discount", discountPercent * 100, discount, subTotal);
+            }
+
             receiptTotal += subTotal;
 
         } // end of for lop
 
         System.out.println(InvoiceApp.SINGLE_DASH_LINE);
+        System.out.printf("Total Savings: $%,8.2f\n", totalSavings);
         System.out.printf("Receipt Total: $%,8.2f\n", receiptTotal);
         System.out.println(InvoiceApp.SINGLE_DASH_LINE);
 
     } // end of printReceipt method
+
+    /**
+     * Apply a discount to the subtotal
+     * 
+     * @param subTotal The original subtotal
+     * @return The subtotal after applying the discount
+     */
+     private static double getDiscount(double subTotal){
+        return 0.33;
+     }
 
     /**
      * Prompt the user for the item description, quantity, and price. Keep looping until the user is done.
