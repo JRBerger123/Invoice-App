@@ -1,7 +1,7 @@
 ## Invoice App
 
 This app is meant as practice for creating java projects using GitHub through a collaborative group.<br>
-The app calculates grocery costs by item, quantity, price, and discount.<br>
+Calculates grocery costs by item, quantity, price, and discount.<br>
 <br>
 
 ## App Preview
@@ -26,7 +26,7 @@ Helpful resources for README Template Examples:
 ## Top Contributors
 
 <a href="https://github.com/JRBerger123/Invoice-App/graphs/contributors">
-  <img src="https://github.com/JRBerger123/Invoice-App" alt="contrib.rocks image" />
+  <img src="https://contrib.rocks/image?repo=JRBerger123/Invoice-App" alt="contrib.rocks image" />
 </a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
