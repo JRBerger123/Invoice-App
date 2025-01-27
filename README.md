@@ -6,7 +6,8 @@ This app is meant as practice for creating java projects using GitHub through a 
 
 ## App Preview
 
-![Screenshot of the application's output](Other/Preview.png)
+![Screenshot of the application's output](Other/Preview.png)<br>
+(Other/InvoiceApp.txt)<br>
 
 ## Helpful Resources
 
@@ -22,8 +23,7 @@ Helpful resources for README Template Examples:
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Top Contributors
-<a href="https://github.com/jrberger123/invoice-app/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=jrberger123/invoice-app" />
-</a>
+
+[![Contributors](https://github.com/jrberger123/invoice-app/graphs/contributors)](https://github.com/jrberger123/invoice-app/graphs/contributors)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
