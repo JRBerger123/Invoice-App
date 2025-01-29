@@ -1,3 +1,5 @@
+Console Output
+
 ==================================================
 Welcome to the Invoice Total Calculator
 ==================================================
@@ -30,3 +32,21 @@ Total Savings: $   16.95
 Receipt Total: $   52.35
 --------------------------------------------------
 Thank you for shopping with us!
+
+
+GBU:
+This project was relatively easy, so I focused on learning how to properly use GitHub. I remembered that Java syntax is extremely similar to C++ for most basic operations.
+This was my first time working on a group project using GitHub. With that being said, it did take a lot of effort figuring out how to use
+the right commands to use git through the console. For example, I learned that VSCode uses PowerShell for its terminal. I learned that first you have to create the repository 
+through the GitHub webpage and add collaborators. After which, you can push local branches to the remote url of the repository.
+
+My thought process for setting up the git repository was to create a main (default) branch and a dev branch.
+Only I would have access to edit the main branch to prevent synchronization issues. The dev branch would be used as the development branch, 
+where I could manually decide whether or not to merge with the main branch. This worked fairly well and prevented issues that would otherwise occur.
+When you set the dev branch as an upstream branch, it will send regularly proxies to the repository to see if your branch is up-to-date. Then you can set 
+branch protection on the main branch so that you are the only one who can directly edit and merge to the main branch.
+
+Needless to say, I had issues explaining to my teammate how git branches worked. They didn't really understand why they couldn't edit main and became angry at this restriction. 
+Furthermore, they didn't understand that git uses local branches and remote (origin) branches. Then, they became extremely frustrated when they had to pull before pushing 
+when they was many commits behind. I think this lack of understanding the basics of GitHub caused contention, especially when some members seemed to show 
+that they didn't care to learn. I hope that future pairings of groups will prevent this as its hard to work with people who lack ambition.

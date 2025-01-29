@@ -5,11 +5,9 @@ import java.util.Scanner;
 /**
  * Represents an Invoice Calculator.
  *
- * @author Brandon Berger
- * @author Conner Diers
+ * @author Brandon Berger, Conner Diers
  * @version 2.0
  * @link https://github.com/JRBerger123/Invoice-App
- * @link https://github.com/ConnerDiers3117/Invoice-App
  */
 public class InvoiceApp {
     /**
@@ -165,11 +163,11 @@ public class InvoiceApp {
 
             discountPercent = getDiscount(subTotal);
 
+            // Apply discount if there is one
             if (discountPercent != 0.0) {
-                //System.out.printf("Discount: %,.2f\n", discountPercent);
-                discount = subTotal * discountPercent;
-                subTotal -= discount;
-                totalSavings += discount;
+                discount = subTotal * discountPercent;  // calculate discount
+                subTotal -= discount;                   // apply discount to subtotal
+                totalSavings += discount;               // calculate cummalitve savings
             
                 System.out.printf("%20s %3.0f%%    -$%,6.2f = $%,8.2f\n", "Discount", discountPercent * 100, discount, subTotal);
             }
@@ -180,6 +178,7 @@ public class InvoiceApp {
 
         System.out.println(InvoiceApp.SINGLE_DASH_LINE);
 
+        // Print the total savings if there are any
         if (totalSavings > 0.0) {
             System.out.printf("Total Savings: $%,8.2f\n", totalSavings);
         }
@@ -190,14 +189,12 @@ public class InvoiceApp {
     } // end of printReceipt method
 
     /**
-     * Apply a discount to the subtotal
+     * Apply a discount to the subtotal based upon defined subTotal cutoffs
      * 
      * @param subTotal The original subtotal
      * @return The subtotal after applying the discount
      */
      private static double getDiscount(double subTotal){
-        /*return 0.33;*/
-
          if (subTotal >= 50.0){
              return .25;
          } else if (subTotal >= 40.0){
@@ -211,7 +208,6 @@ public class InvoiceApp {
          }else {
              return .0;
          }
-
      }
 
     /**
