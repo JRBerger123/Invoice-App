@@ -139,7 +139,6 @@ public class InvoiceApp {
         String description = "?";
         int qty = 0;
         double price = 0.0;
-
         double subTotal = 0.0;
         double receiptTotal = 0.0;
         double discountPercent = 0.0;
