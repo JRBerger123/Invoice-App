@@ -4,11 +4,15 @@ import java.util.Scanner;
 
 /**
  * Represents an Invoice Calculator.
- *
+ * <p>
+ * This class provides methods to calculate grocery costs by item, quantity, price, and discount.
+ * </p>
+ * 
  * @author Brandon Berger, Conner Diers
  * @version 2.0
- * @link https://github.com/JRBerger123/Invoice-App
+ * @see <a href="https://github.com/JRBerger123/Invoice-App">GitHub Repository</a>
  */
+
 public class InvoiceApp {
     /**
      * Scanner for all user input
@@ -130,6 +134,28 @@ public class InvoiceApp {
     } // end of getYesNo method
 
     /**
+     * Apply a discount to the subtotal based upon defined subTotal cutoffs
+     * 
+     * @param subTotal The original subtotal
+     * @return The subtotal after applying the discount
+     */
+    private static double getDiscount(double subTotal){
+        if (subTotal >= 50.0){
+            return .25;
+        } else if (subTotal >= 40.0){
+            return .20;
+        }else if (subTotal >= 30.0){
+            return .15;
+        } else if (subTotal >= 20.0){
+            return .10;
+        }else if (subTotal >= 10.0){
+            return .5;
+        }else {
+            return .0;
+        }
+    }
+
+    /**
      * Print the user's receipt
      * @param descriptionList All descriptions for items purchased
      * @param qtyList All qualities for items purchased
@@ -186,28 +212,6 @@ public class InvoiceApp {
         System.out.println(InvoiceApp.SINGLE_DASH_LINE);
 
     } // end of printReceipt method
-
-    /**
-     * Apply a discount to the subtotal based upon defined subTotal cutoffs
-     * 
-     * @param subTotal The original subtotal
-     * @return The subtotal after applying the discount
-     */
-     private static double getDiscount(double subTotal){
-         if (subTotal >= 50.0){
-             return .25;
-         } else if (subTotal >= 40.0){
-             return .20;
-         }else if (subTotal >= 30.0){
-             return .15;
-         } else if (subTotal >= 20.0){
-             return .10;
-         }else if (subTotal >= 10.0){
-             return .5;
-         }else {
-             return .0;
-         }
-     }
 
     /**
      * Prompt the user for the item description, quantity, and price. Keep looping until the user is done.
